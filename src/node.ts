@@ -23,7 +23,7 @@ export function register(swcOptions: swcType.Options = {}) {
     alwaysStrict = false,
     noImplicitUseStrict = false,
   } = getTSOptions() ?? {}
-  const module = (_module as unknown as string).toLowerCase()
+  const module = (_module as unknown as string)?.toLowerCase()
 
   const transformOptions = deepmerge(
     {
