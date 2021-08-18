@@ -1,0 +1,24 @@
+{
+  "module": {
+    "type": "commonjs",
+    "strict": true,
+    "strictMode": true
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    },
+    "transform": null,
+    "target": "es2018",
+    "loose": true,
+    "externalHelpers": true,
+
+    "minify": {
+      "compress": {
+        "unused": true
+      },
+      "mangle": true
+    }
+  },
+  "minify": true
+}
