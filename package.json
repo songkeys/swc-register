@@ -1,6 +1,6 @@
 {
   "name": "swc-register",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Transpile JSX, TypeScript and esnext features on the fly with swc",
   "main": "register.js",
   "scripts": {
@@ -31,17 +31,13 @@
   },
   "homepage": "https://github.com/Songkeys/swc-register#readme",
   "dependencies": {
-    "@swc/core": "^1.2.58",
-    "@swc/helpers": "^0.2.13",
-    "deepmerge": "^4.2.2",
-    "joycon": "^3.0.1",
-    "jsonc-parser": "^3.0.0",
     "pirates": "^4.0.1",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.19",
+    "tsconfig-to-swcconfig": "^1.0.1"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.49",
-    "@swc/core": "^1.2.78",
+    "@swc/core": "^1.2.80",
     "@types/node": "^16.6.1",
     "@types/source-map-support": "^0.5.4",
     "@types/tap": "^15.0.5",
@@ -50,6 +46,9 @@
     "prettier": "^2.3.2",
     "tap": "^15.0.9",
     "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "@swc/core": ">= 1.2.58"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

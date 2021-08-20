@@ -1,8 +1,11 @@
 # swc-register
 
-[![npm version](https://badgen.net/npm/v/swc-register)](https://npm.im/swc-register) [![npm downloads](https://badgen.net/npm/dm/swc-register)](https://npm.im/swc-register)
+[![NPM version](https://img.shields.io/npm/v/swc-register.svg?style=flat)](https://npmjs.org/package/swc-register)
+[![NPM downloads](https://img.shields.io/npm/dm/swc-register.svg?style=flat)](https://npmjs.org/package/swc-register)
 
-Transpile JSX, TypeScript and esnext features on the fly with [swc](https://github.com/swc-project/swc)
+Transpile JSX, TypeScript and esnext features on the fly with [swc](https://github.com/swc-project/swc).
+
+It will respect your `tsconfig.json` (and `.swcrc` if provided).
 
 ## Install
 
@@ -36,9 +39,16 @@ Now just run `npm run ts -- file.ts` or `yarn ts file.ts` instead.
 const { register } = require('swc-register/dist/node')
 
 register({
-  // ...options
+  // ...swc options
 })
 ```
+
+## Similar Projects
+
+There are some other swc registers like:
+
+- [swc-project/register](https://github.com/swc-project/register): this is a babel-register alternative
+- [@swc-node/register](https://github.com/Brooooooklyn/swc-node/tree/master/packages/register): a similar project but doesn't has a perfect tsconfig mapping
 
 ## License
 

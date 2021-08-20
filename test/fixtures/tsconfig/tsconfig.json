@@ -1,6 +1,0 @@
-{
-  // test should read this file correctly
-  "compilerOptions": {
-    "lib": ["esnext"]
-  }
-}
