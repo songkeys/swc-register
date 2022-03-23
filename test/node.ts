@@ -15,6 +15,17 @@ test('import module', (t) => {
   })
 })
 
+test('import module (ts)', (t) => {
+  spawn('node', [
+    '-r',
+    register,
+    path.resolve(__dirname, 'fixtures', 'module-ts', 'index.ts'),
+  ]).stdout.on('data', (data) => {
+    t.match(data.toString(), 'foo')
+    t.end()
+  })
+})
+
 test('arrow function', (t) => {
   spawn('node', [
     '-r',
