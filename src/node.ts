@@ -40,7 +40,6 @@ export function register(swcOptions: swcType.Options = {}) {
       )
 
       if (sourceMap) {
-        console.log(sourceMap)
         map.set(filename, sourceMap)
       }
 
