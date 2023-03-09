@@ -1,6 +1,6 @@
 {
   "name": "swc-register",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Transpile JSX, TypeScript and esnext features on the fly with swc",
   "main": "register.js",
   "scripts": {
